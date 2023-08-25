@@ -1,0 +1,73 @@
+.Inbox {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.InboxHeader {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.InboxHeader__xmtp {
+  flex: 0 0 var(--sidebar-width);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8px 16px;
+}
+
+.InboxHeader__xmtp img,
+.InboxHeader__xmtp span {
+    margin: 0;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.InboxHeader__actions {
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.InboxConversations {
+  flex-grow: 1;
+  display: flex;
+  min-height: 0;
+}
+
+.InboxConversations__list {
+  overflow-y: auto;
+  flex: 0 0 var(--sidebar-width);
+  background-color: #eee;
+}
+
+.InboxConversations__messages {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.InboxConversations__messages > :nth-child(2) {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.avatar {
+  width: 48px;  /* 1.5 times the original size */
+  height: 48px; /* Ensure height is the same to maintain aspect ratio */
+  border-radius: 50%; /* This will make the image round */
+  object-fit: cover;  /* Ensures the image covers the entire area */
+}
+
+.InboxFooter {
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  align-items: center;     /* Center the button vertically */
+  padding: 10px;           /* Add some padding for spacing */
+  position: fixed;         /* Fix the position */
+  width: 100%;             /* Full width of the parent container */
+  bottom: 0;               /* Place at the bottom */
+}
