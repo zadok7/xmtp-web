@@ -1,0 +1,45 @@
+{
+  "name": "showmehow-eth-messenger",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "yarn typecheck && vite build",
+    "clean:dist": "rm -rf dist",
+    "clean": "rm -rf .turbo && rm -rf node_modules && yarn clean:dist",
+    "lint": "eslint . --ignore-path ../../.gitignore",
+    "format:base": "prettier --ignore-path ../../.gitignore",
+    "format:check": "yarn format:base -c .",
+    "format": "yarn format:base -w .",
+    "quickstart": "yarn dev",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ensdomains/ensjs": "^3.0.0-alpha.66",
+    "@ethersproject/providers": "^5.7.2",
+    "@heroicons/react": "^2.0.18",
+    "@rainbow-me/rainbowkit": "^0.12.16",
+    "@xmtp/content-type-remote-attachment": "^1.0.7",
+    "@xmtp/react-components": "workspace:*",
+    "@xmtp/react-sdk": "workspace:*",
+    "ethereum-ens": "^0.8.0",
+    "ethers": "5.7.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "wagmi": "^0.12.18"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.4",
+    "@xmtp/tsconfig": "workspace:*",
+    "autoprefixer": "^10.4.15",
+    "eslint": "^8.47.0",
+    "eslint-config-xmtp-web": "workspace:*",
+    "postcss": "^8.4.25",
+    "postcss-preset-env": "^8.5.1",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.9"
+  }
+}

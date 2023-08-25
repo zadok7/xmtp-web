@@ -1,0 +1,15 @@
+.NewMessageInputWrapper {
+  padding: 1rem;
+}
+
+.TargetAddressDisplay {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  background-color: #f4f4f4; /* Light gray to indicate it's not editable */
+  color: #333; /* Text color */
+  font-size: 1rem;
+}
