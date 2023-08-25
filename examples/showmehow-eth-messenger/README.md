@@ -49,7 +49,7 @@ VITE_ALCHEMY_NETWORK=ALCHEMY_NETWORK
 ## Deploying on IPFS and LIMO
 
 - In `examples/showmehow-eth-messenger`, run `yarn build`.
-- Navigate to the dist folder after the build and open the index.html file. You will find two references to `"/assets/..."`. To fix these, ensure they have relative links. Add a `.` in front of them so they appear as `"./assets/..."`.
+- Navigate to the `dist` folder after the build and open the index.html file. You will find two references to `"/assets/..."`. To fix these, ensure they have relative links. Add a `.` in front of them so they appear as `"./assets/..."`.
 - Setup the `contenthash` record for your ENS name on the [ENS Managr App](https://app.ens.domains)
 
 ![image](https://github.com/zadok7/xmtp-web/assets/88821511/740b44e2-fd1c-42b0-9a1f-421aa4bfbb6c)
