@@ -20,12 +20,12 @@ To learn more about XMTP and get answers to frequently asked questions, see the 
 Before running the project, you need to set up the environment variables. Create a `.env` file in the root directory of your project and add the following:
 
 ```env
-VITE_PROJECT_ID=WALLET_CONNECT_PROJECT_ID
+VITE_PROJECT_ID=WALLETCONNECT_PROJECT_ID
 VITE_TARGET_WALLET_ADDRESS=0x_WALLET_ADDRESS
 VITE_ALCHEMY_API_KEY=ALCHEMY_API_KEY
 VITE_ALCHEMY_NETWORK=ALCHEMY_NETWORK
 ```
-- WALLET_CONNECT_PROJECT_ID = Get this from [https://cloud.walletconnect.com/app](https://cloud.walletconnect.com/app)
+- WALLETCONNECT_PROJECT_ID = Get this from [https://cloud.walletconnect.com/app](https://cloud.walletconnect.com/app)
 - 0x_WALLET_ADDRESS = THe Ethereum address you want to receive messages at. This is the only address users will be able to message.
 - ALCHEMY_API_KEY = Visit [dashboard.alchemy.com/apps](https://dashboard.alchemy.com/apps) to get a free API key. We're using it to detect if the `TARGET_WALLET_ADDRESS` has an ENS Primary name and Avatar so we can display that to the user.
 - ALCHEMY_NETWORK = This should probably be `homestead` which is Mainnet.
@@ -58,5 +58,8 @@ VITE_ALCHEMY_NETWORK=ALCHEMY_NETWORK
 
 ![image](https://github.com/zadok7/xmtp-web/assets/88821511/e4ed9b95-4fb9-42d2-8e83-96fa07c6fea1)
 
+> ⚠️ **Public Visibility of API Keys** 
+>
+> Please be aware that any API keys included in this static front-end code will be publicly visible when hosted on IPFS or elsewhere.
 
 
