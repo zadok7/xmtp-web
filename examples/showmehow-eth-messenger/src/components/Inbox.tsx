@@ -62,14 +62,6 @@ export const Inbox: React.FC = () => {
           {/* Display ENS name if it exists */}
           {ensName && <span>{ensName}</span>}
         </div>
-        <div className="InboxHeader__actions">
-          <button
-            className="Button Button--secondary"
-            type="button"
-            onClick={handleDisconnect}>
-            <ArrowRightOnRectangleIcon width={24} /> Disconnect
-          </button>
-        </div>
       </div>
       <div className="InboxConversations">
         <div className="InboxConversations__messages">
@@ -84,6 +76,15 @@ export const Inbox: React.FC = () => {
           )}
         </div>
       </div>
+      <div className="InboxFooter">
+          <button
+            className="Button Button--secondary"
+            type="button"
+            onClick={handleDisconnect}>
+            <ArrowRightOnRectangleIcon width={24} /> Disconnect
+          </button>
+      </div>
     </div>
-  );
+);
+
 };

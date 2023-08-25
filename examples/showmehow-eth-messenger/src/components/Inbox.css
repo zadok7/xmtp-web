@@ -19,9 +19,9 @@
 
 .InboxHeader__xmtp img,
 .InboxHeader__xmtp span {
-    margin: 0;
-    margin-right: 10px;
-    font-weight: bold;
+  margin: 0;
+  margin-right: 10px;
+  font-weight: bold;
 }
 
 .InboxHeader__actions {
@@ -35,7 +35,9 @@
 .InboxConversations {
   flex-grow: 1;
   display: flex;
+  flex-direction: column;
   min-height: 0;
+  overflow: auto; /* Allows for scrolling if the content overflows */
 }
 
 .InboxConversations__list {
@@ -60,4 +62,12 @@
   height: 48px; /* Ensure height is the same to maintain aspect ratio */
   border-radius: 50%; /* This will make the image round */
   object-fit: cover;  /* Ensures the image covers the entire area */
+}
+
+.InboxFooter {
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  align-items: center;     /* Center the button vertically */
+  padding: 10px;           /* Add some padding for spacing */
+  background-color: #fff; /* Set a background color to avoid seeing through */
 }
